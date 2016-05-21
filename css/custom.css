@@ -18,8 +18,6 @@ a {
     color: #00A1E0;
     text-decoration: underline;
     transition: all 0.3s ease;
-    position: relative;
-    z-index: 9999;
 }
 
 a:hover {
@@ -136,8 +134,7 @@ h2 {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    animation-delay: 1s;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     position: fixed;
     bottom: 72px;
     right: 73px;
@@ -162,6 +159,7 @@ h2 {
     bottom: 72px;
     right: 73px;
     overflow: hidden;
+    display: none;
 }
 
 .history-back-button {
