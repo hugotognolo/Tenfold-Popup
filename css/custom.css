@@ -1,0 +1,361 @@
+/* ====================
+=== Popup Custom CSS ===
+=====================*/
+
+
+/* General Classes */
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    color: #666666;
+}
+
+p {
+    margin: 0px;
+}
+
+a {
+    color: #00A1E0;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 9999;
+}
+
+a:hover {
+    color: rgba(0, 161, 224, 0.6);
+}
+
+
+/* Typography */
+
+h3 {
+    font-family: 'TitilliumWeb-Light';
+    font-size: 14px;
+    color: #666666;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'TitilliumWeb-Light';
+    font-size: 22px;
+    color: #666666;
+}
+
+
+/* Sections ID */
+
+#ongoing-call {
+    background: #F9F9F9;
+    padding: 30px 30px 60px 30px;
+}
+
+#customer-info {
+    padding: 0px 30px;
+    margin-top: -45px;
+}
+
+#customer-calls {
+    padding: 0px 30px;
+}
+
+
+/* Labels */
+
+.label {
+    font-family: 'TitilliumWeb-Bold';
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    background: #CCCCCC;
+    border-radius: 4px;
+    padding: 2px 8px 2px 8px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.label-primary {
+    background: #00D95A;
+}
+
+
+/* Round Icons */
+
+.round-icon {
+    border: 1px solid #CCCCCC;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.icon-xs {
+    height: 15px;
+    width: 15px;
+}
+
+.icon-md {
+    height: 38.87px;
+    width: 38.87px;
+}
+
+.icon-lg {
+    height: 62px;
+    width: 62px;
+}
+
+.icon-md:hover {
+    background-color: white;
+}
+
+
+/* Lines */
+
+.vertical-line {
+    border: 0.5px solid #CCCCCC;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    left: 48%;
+    margin-left: 13px;
+    z-index: -1;
+}
+
+
+/* Icon Button */
+
+.icon-button {
+    background: #00A1E0;
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.20), 0px 0px 0px 7px rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    position: fixed;
+    bottom: 72px;
+    right: 73px;
+    transition: all 0.3s ease;
+}
+
+.icon-button:hover {
+    background: rgba(0, 161, 224, 0.9);
+    transition: all 0.3s ease;
+}
+
+
+/* Icon Popup */
+
+.icon-popup {
+    background: #FFFFFF;
+    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.20), 0px 0px 0px 7px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    height: 408.34px;
+    width: 598.6px;
+    position: fixed;
+    bottom: 72px;
+    right: 73px;
+    overflow: hidden;
+}
+
+.history-back-button {
+    display: flex;
+    align-items: center;
+}
+
+.history-back-button h3 {
+    float: left;
+    margin: 0px 0px 0px 10px;
+}
+
+.call-status {
+    text-align: right;
+    float: right;
+}
+
+.call-status .label-primary {
+    margin-bottom: 3px;
+}
+
+.call-timer {
+    font-family: 'TitilliumWeb-Thin';
+    font-size: 42px;
+    color: #666666;
+    letter-spacing: -1.75px;
+    line-height: 32px;
+    float: right;
+    margin-left: 10px;
+}
+
+.call-icon {
+    float: right;
+    margin-left: 10px;
+}
+
+#customer-info h2 {
+    margin: 6px 0px 0px 0px;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.customer-phone {
+    float: right;
+    font-family: 'TitilliumWeb-Light';
+    font-size: 22px;
+}
+
+#contact {
+    padding-left: 30px;
+}
+
+.green-dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 100px;
+    background: #00D95A;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.customer-description {
+    margin-top: 20px;
+}
+
+.customer-description .icon {
+    float: left;
+    height: 50px;
+    margin-right: 6px;
+    position: relative;
+    top: -2px;
+}
+
+.customer-description a {
+    color: #AAAAAA;
+    transition: all 0.3s ease;
+}
+
+.customer-description a:hover {
+    color: #00a1e0;
+}
+
+.customer-description .social {
+    color: #AAAAAA;
+}
+
+#customer-calls .icon-lg {
+    margin-left: 13px;
+    background-color: white;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+#customer-calls .icon-lg:hover {
+    background-color: whitesmoke;
+}
+
+#calls-history {
+    text-align: right;
+}
+
+#calls-history .icon {
+    position: relative;
+    top: -3px;
+    margin-left: 3px;
+}
+
+#customer-calls .icon-xs {
+    float: left;
+    margin-right: 6px;
+}
+
+#customer-calls h3 {
+    margin-top: 5px;
+}
+
+.history {
+    display: inline-block;
+    float: right;
+    margin-left: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.history a {
+    display: block;
+    margin-top: 3px;
+}
+
+#registers-tab {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#registers-tab .title {
+    display: inline-block;
+    background: #EBEFF2;
+    border-radius: 100px;
+    text-transform: uppercase;
+    padding: 5px 20px 5px 20px;
+}
+
+#registers-body {
+    background: #EBEFF2;
+    padding: 25px;
+    margin-top: -15px;
+}
+
+#registers-body .box {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.save-button {
+    font-weight: bolder;
+    background: #00A1E0;
+    border-radius: 4px;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.save-button:hover {
+    background-color: rgba(0, 161, 224, 0.8);
+}
+
+.tenfold-logo {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+}
+
+.close-button {
+    width: 16px;
+    height: 16px;
+    background: #00A1E0;
+    border-radius: 100px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.close-button:hover {
+    background-color: rgba(0, 161, 224, 0.8);
+}
